@@ -9,4 +9,4 @@ This extension provides the following features for files that match the pattern 
 
 ## Third party software notices and information
 
-Third party software notices and license information can be found in [ThirdPartyNotices.extension.txt](ThirdPartyNotices.extension.txt) and [ThirdPartyNotices.server.txt](ThirdPartyNotices.server.txt)
+Third party software notices and license information can be found in ThirdPartyNotices.extension.txt and ThirdPartyNotices.server.txt at the root of the project.
