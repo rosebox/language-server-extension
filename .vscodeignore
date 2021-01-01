@@ -1,0 +1,13 @@
+.vscode
+node_modules
+out/
+src/
+fileicons/
+server/
+client/
+tsconfig.json
+.prettierrc.js
+shared.webpack.config.js
+tsconfig.json
+babel.config.js
+jest.config.js

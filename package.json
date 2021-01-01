@@ -1,0 +1,54 @@
+{
+    "name": "rosebox-language-server-extension",
+    "displayName": "Rosebox Langauge Server Extension",
+    "description": "A language server extension for Rosebox",
+    "version": "0.0.1",
+    "publisher": "hugonteifeh",
+    "author": "Hugo Nteifeh",
+    "license": "MIT",
+    "categories": [],
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "activationEvents": [
+        "onLanguage:typescript"
+    ],
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rosebox/language-server-extension"
+    },
+    "main": "./dist/extension",
+    "scripts": {
+        "clean": "rimraf dist",
+        "test": "jest",
+        "compile": "tsc -b",
+        "watch": "tsc -b -w",
+        "postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
+        "webpack-client": "npm run clean && webpack --mode production --config ./client/webpack.config.js",
+        "webpack": "npm run clean && webpack --mode production --config ./client/webpack.config.js && webpack --mode production --config ./server/webpack.config.js",
+        "vscode:prepublish": "npm run webpack"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-typescript": "^7.12.7",
+        "@rosebox/core": "^0.5.6",
+        "@types/color": "^3.0.1",
+        "@types/mocha": "^8.0.3",
+        "@types/node": "^12.12.0",
+        "@types/vscode": "^1.52.0",
+        "@typescript-eslint/parser": "^2.34.0",
+        "eslint": "^6.8.0",
+        "jest": "^26.6.3",
+        "license-checker-webpack-plugin": "^0.2.1",
+        "license-webpack-plugin": "^2.3.9",
+        "merge-options": "^3.0.4",
+        "mocha": "^8.1.1",
+        "terser-webpack-plugin": "^5.0.3",
+        "ts-loader": "^8.0.12",
+        "vscode-test": "^0.4.3",
+        "webpack": "^5.11.1",
+        "webpack-cli": "^4.3.0",
+        "webpack-license-plugin": "^4.1.2"
+    }
+}
