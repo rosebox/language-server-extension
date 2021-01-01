@@ -11,3 +11,4 @@ shared.webpack.config.js
 tsconfig.json
 babel.config.js
 jest.config.js
+.eslintrc.js
