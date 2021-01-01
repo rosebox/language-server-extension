@@ -2,7 +2,7 @@
     "name": "rosebox-language-server-extension",
     "displayName": "Rosebox Langauge Server Extension",
     "description": "A language server extension for Rosebox",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "hugonteifeh",
     "author": "Hugo Nteifeh",
     "license": "MIT",
