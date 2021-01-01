@@ -1,6 +1,6 @@
 # Rosebox Langauge Server Extension
 
-This extension provides the following features for `*.rb.ts` files:
+This extension provides the following features for files that match the pattern `*.rb.ts`:
 
 - Shows color boxes next to colors.
 - Provides color pickers that are visible upon hovering over a color.
