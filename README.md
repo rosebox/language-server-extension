@@ -1,4 +1,4 @@
-# Rosebox Langauge Server Extension
+# Rosebox Language Server Extension
 
 This extension provides the following features for files that match the pattern `*.rb.ts`:
 
