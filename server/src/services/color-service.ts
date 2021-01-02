@@ -28,10 +28,8 @@ let log = (x: any): void => {}
 const isInRange = (x: number, start: number, end: number) => x >= start && x < end
 
 const isPerFunction = (argument: any) => argument.expression?.escapedText === 'per'
-const isInteger = (argument: any) => Number.isInteger(parseFloat(argument.text))
 
 const isPercentageArgument = (argument: any): boolean => {
-    log('isPercentageArgument')
     const hasValidArguments = () => {
         const funcArguments: any[] = argument.arguments ?? []
         return (
